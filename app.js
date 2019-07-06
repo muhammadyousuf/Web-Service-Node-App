@@ -2,6 +2,12 @@ const express = require('express');
 
 var app = express();
 
+app.get('/', (req, res, next) => {
+     res.send('<h1>Hello Express</h1>');
+   
+ })
+ 
+
 app.get('/express', (req, res, next) => {
    // res.send('<h1>Hello Express</h1>');
     res.send({
