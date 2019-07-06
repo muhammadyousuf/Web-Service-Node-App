@@ -7,6 +7,10 @@ app.get('/', (req, res, next) => {
    
  })
  
+ app.get('/about', (req, res, next) => {
+    res.send('About Page');
+  
+})
 
 app.get('/express', (req, res, next) => {
    // res.send('<h1>Hello Express</h1>');
