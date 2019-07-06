@@ -20,6 +20,13 @@ app.get('/express', (req, res, next) => {
     })
 })
 
+app.get('/bad', (req, res, next) => {
+    res.send({
+      errorMessage:"unable to access this route"        
+    })
+  
+})
+
 app.listen(5000, () => {
     console.log('Server is running 5000 port')
 })
